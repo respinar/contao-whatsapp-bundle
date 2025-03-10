@@ -1,0 +1,10 @@
+# config/services.yaml
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true    
+
+    Respinar\WhatsappBundle\:
+        resource: ../src/
+        exclude: ../src/DependencyInjection
+
