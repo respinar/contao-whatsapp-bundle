@@ -1,0 +1,50 @@
+{
+    "name": "respinar/contao-whatsapp",
+    "description": "A WhatsApp button bundle for Contao CMS",
+    "keywords": ["contao", "whatsapp", "bundle"],
+    "type": "contao-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamid Peywasti",
+            "email": "hamid@respinar.com",
+            "homepage": "https://respinar.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/respinar/contao-whatsapp/issues",
+        "source": "https://github.com/respinar/contao-whatsapp"
+    },
+    "require": {
+        "php": "^8.2",
+        "contao/core-bundle":"^5.3"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Respinar\\WhatsappBundle\\": "src/"
+        },
+        "classmap": [
+            "contao/"
+        ],
+        "exclude-from-classmap": [
+            "contao/config/",
+            "contao/dca/",
+            "contao/languages/",
+            "contao/templates/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "contao-community-alliance/composer-plugin": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Respinar\\WhatsappBundle\\ContaoManager\\Plugin"
+    }
+}
