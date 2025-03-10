@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fa" datatype="plaintext" original="tl_page">
+        <body>
+            <!-- Legend -->
+            <trans-unit id="tl_page.whatsapp_legend">
+                <source>WhatsApp Settings</source>
+                <target>تنظیمات واتساپ</target>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tl_page.whatsappDisabled.0">
+                <source>Disable WhatsApp</source>
+                <target>غیرفعال کردن واتساپ</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappDisabled.1">
+                <source>Check this box to disable the WhatsApp feature on this page.</source>
+                <target>این کادر را علامت بزنید تا قابلیت واتساپ در این صفحه غیرفعال شود.</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappTitle.0">
+                <source>WhatsApp Title</source>
+                <target>عنوان واتساپ</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappTitle.1">
+                <source>Enter the title for the WhatsApp button or link.</source>
+                <target>عنوان دکمه یا لینک واتساپ را وارد کنید.</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappNumber.0">
+                <source>WhatsApp Number</source>
+                <target>شماره واتساپ</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappNumber.1">
+                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
+                <target>شماره تلفن واتساپ را وارد کنید (مثلاً +1234567890).</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappMessage.0">
+                <source>Default Message</source>
+                <target>پیام پیش‌فرض</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappMessage.1">
+                <source>Enter the default message to be sent via WhatsApp.</source>
+                <target>پیام پیش‌فرض برای ارسال از طریق واتساپ را وارد کنید.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
