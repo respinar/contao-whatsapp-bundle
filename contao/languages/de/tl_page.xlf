@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="tl_page">
+        <body>
+            <!-- Legend -->
+            <trans-unit id="tl_page.whatsapp_legend">
+                <source>WhatsApp Settings</source>
+                <target>WhatsApp-Einstellungen</target>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tl_page.whatsappDisabled.0">
+                <source>Disable WhatsApp</source>
+                <target>WhatsApp deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappDisabled.1">
+                <source>Check this box to disable the WhatsApp feature on this page.</source>
+                <target>Aktivieren Sie dieses Kontrollkästchen, um die WhatsApp-Funktion auf dieser Seite zu deaktivieren.</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappTitle.0">
+                <source>WhatsApp Title</source>
+                <target>WhatsApp-Titel</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappTitle.1">
+                <source>Enter the title for the WhatsApp button or link.</source>
+                <target>Geben Sie den Titel für den WhatsApp-Button oder -Link ein.</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappNumber.0">
+                <source>WhatsApp Number</source>
+                <target>WhatsApp-Nummer</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappNumber.1">
+                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
+                <target>Geben Sie die Telefonnummer für WhatsApp ein (z. B. +1234567890).</target>
+            </trans-unit>
+
+            <trans-unit id="tl_page.whatsappMessage.0">
+                <source>Default Message</source>
+                <target>Standardnachricht</target>
+            </trans-unit>
+            <trans-unit id="tl_page.whatsappMessage.1">
+                <source>Enter the default message to be sent via WhatsApp.</source>
+                <target>Geben Sie die Standardnachricht ein, die über WhatsApp gesendet werden soll.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
