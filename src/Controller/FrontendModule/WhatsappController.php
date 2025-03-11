@@ -28,6 +28,7 @@ class WhatsappController extends AbstractFrontendModuleController
         $template->whatsappNumber = $page->whatsappNumber ?: $model->whatsappNumber;
         $template->whatsappMessage = $page->whatsappMessage ?: $model->whatsappMessage;
         $template->cssClass = StringUtil::deserialize($model->cssID)[1] ?? '';
+        $template->searchable = False;
 
         // Add JavaScript file to the page
         $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaowhatsapp/js/whatsapp.js|static';
