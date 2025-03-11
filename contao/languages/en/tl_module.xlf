@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="en" datatype="plaintext" original="tl_module">
+    <file source-language="en" datatype="plaintext" original="tl_module">
         <body>
             <!-- Legend -->
             <trans-unit id="tl_module.whatsapp_legend">
                 <source>WhatsApp Settings</source>
-                <target>WhatsApp Settings</target>
             </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_module.whatsappTitle.0">
                 <source>WhatsApp Title</source>
-                <target>WhatsApp Title</target>
             </trans-unit>
             <trans-unit id="tl_module.whatsappTitle.1">
                 <source>Enter the title for the WhatsApp module.</source>
-                <target>Enter the title for the WhatsApp module.</target>
             </trans-unit>
 
             <trans-unit id="tl_module.whatsappNumber.0">
                 <source>WhatsApp Number</source>
-                <target>WhatsApp Number</target>
             </trans-unit>
             <trans-unit id="tl_module.whatsappNumber.1">
                 <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
-                <target>Enter the phone number for WhatsApp (e.g., +1234567890).</target>
             </trans-unit>
 
             <trans-unit id="tl_module.whatsappMessage.0">
                 <source>WhatsApp Message</source>
-                <target>WhatsApp Message</target>
             </trans-unit>
             <trans-unit id="tl_module.whatsappMessage.1">
                 <source>Enter the default message to be sent via WhatsApp.</source>
-                <target>Enter the default message to be sent via WhatsApp.</target>
             </trans-unit>
         </body>
     </file>
