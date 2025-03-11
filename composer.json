@@ -25,26 +25,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\WhatsappBundle\\": "src/"
-        },
-        "classmap": [
-            "contao/"
-        ],
-        "exclude-from-classmap": [
-            "contao/config/",
-            "contao/dca/",
-            "contao/languages/",
-            "contao/templates/"
-        ]
-    },
-    "config": {
-        "allow-plugins": {
-            "contao-components/installer": false,
-            "contao/manager-plugin": false,
-            "contao-community-alliance/composer-plugin": true
+            "Respinar\\ContaoWhatsappBundle\\": "src/"
         }
-    },
+    },    
     "extra": {
-        "contao-manager-plugin": "Respinar\\WhatsappBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\ContaoWhatsappBundle\\ContaoManager\\Plugin"
     }
 }
