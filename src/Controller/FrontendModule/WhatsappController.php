@@ -30,7 +30,7 @@ class WhatsappController extends AbstractFrontendModuleController
         $template->cssClass = StringUtil::deserialize($model->cssID)[1] ?? '';
 
         // Add JavaScript file to the page
-        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/respinarwhatsapp/js/whatsapp.js|static';
+        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaowhatsapp/js/whatsapp.js|static';
 
         return $template->getResponse();
     }
