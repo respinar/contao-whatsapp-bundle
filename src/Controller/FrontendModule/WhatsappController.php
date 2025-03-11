@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Respinar\WhatsappBundle\Controller\FrontendModule;
+namespace Respinar\ContaoWhatsappBundle\Controller\FrontendModule;
 
 use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsFrontendModule;
