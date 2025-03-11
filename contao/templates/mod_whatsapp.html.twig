@@ -1,13 +1,26 @@
-<div class="whatsapp-module twig">
-    <div class="{{ cssClass }}">
-        <a id="whatsapp-link" 
-           href="#" 
-           data-phone="{{ whatsappNumber }}" 
-           data-message="{{ whatsappMessage }}" 
-           title="WhatsApp" 
-           rel="nofollow" 
-           target="_blank">
-            <span>{{ whatsappTitle }}</span>
-        </a>
+
+
+{% if searchable is defined and not searchable %}
+    <!-- indexer::stop -->
+{%- endif %}
+
+{% block whatsapp %}
+    <div class="module-whatsapp">
+        <div class="{{ cssClass }}">
+            <a id="whatsapp-link" 
+            href="#" 
+            data-phone="{{ whatsappNumber }}"
+            data-message="{{ whatsappMessage }}" 
+            title="WhatsApp" 
+            rel="nofollow" 
+            target="_blank">
+                <span>{{ whatsappTitle }}</span>
+            </a>
+        </div>
     </div>
-</div>
+{% endblock %}
+
+{% if searchable is defined and not searchable -%}
+    <!-- indexer::continue -->
+{% endif %}
+
