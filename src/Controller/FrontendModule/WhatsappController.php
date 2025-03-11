@@ -7,7 +7,6 @@ namespace Respinar\ContaoWhatsappBundle\Controller\FrontendModule;
 use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsFrontendModule;
 use Contao\ModuleModel;
-use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Contao\StringUtil;
@@ -15,7 +14,7 @@ use Contao\StringUtil;
 #[AsFrontendModule(category: "miscellaneous", type: "whatsapp", template: "mod_whatsapp")]
 class WhatsappController extends AbstractFrontendModuleController
 {
-    protected function getResponse(Template $template, ModuleModel $model, Request $request): Response
+    protected function getResponse(FragmentTemplate $template, ModuleModel $model, Request $request): Response
     {
         // Check if the current page has WhatsApp fields set
         $page = $this->getPageModel();
