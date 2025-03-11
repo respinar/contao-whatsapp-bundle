@@ -32,7 +32,7 @@ class WhatsappController extends AbstractFrontendModuleController
         $template->searchable = False;
 
         // Add JavaScript file to the page
-        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaowhatsapp/js/whatsapp.js|static';
+        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/respinarcontaowhatsapp/js/whatsapp.js|static';
 
         return $template->getResponse();
     }
