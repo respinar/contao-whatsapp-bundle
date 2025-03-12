@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 $GLOBALS["TL_DCA"]["tl_module"]["palettes"]["whatsapp"] = '
-    {title_legend},name,headline,type;
+    {title_legend},name,type;
     {whatsapp_legend},whatsappTitle,whatsappNumber,whatsappMessage;
     {template_legend:hide},cssID,customTpl;
     {protected_legend:hide},protected;
