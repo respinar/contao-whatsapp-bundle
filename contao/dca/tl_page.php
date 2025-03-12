@@ -3,22 +3,11 @@
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 
 PaletteManipulator::create()
-    ->addLegend(
-        "whatsapp_legend",
-        "protected_legend",
-        PaletteManipulator::POSITION_BEFORE
-    )
-    ->addField(
-        [
-            "whatsappTitle",
-            "whatsappDisabled",
-            "whatsappNumber",
-            "whatsappMessage",
-        ],
-        "whatsapp_legend",
-        PaletteManipulator::POSITION_APPEND
-    )
-    ->applyToPalette("regular", "tl_page");
+    ->addLegend("whatsapp_legend", "protected_legend", PaletteManipulator::POSITION_BEFORE)
+    ->addField(["whatsappTitle", "whatsappDisabled", "whatsappNumber", "whatsappMessage"], "whatsapp_legend", PaletteManipulator::POSITION_APPEND)
+    ->applyToPalette("regular", "tl_page")
+    ->applyToPalette('root', 'tl_page')
+    ->applyToPalette('rootfallback', 'tl_page');
 
 // Define fields
 $GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappDisabled"] = [
