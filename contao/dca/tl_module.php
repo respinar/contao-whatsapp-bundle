@@ -18,7 +18,7 @@ $GLOBALS["TL_DCA"]["tl_module"]["fields"]["whatsappTitle"] = [
 $GLOBALS["TL_DCA"]["tl_module"]["fields"]["whatsappNumber"] = [
     "inputType" => "text",
     "eval" => ["mandatory" => true, "maxlength" => 20, "tl_class" => "w50 clr"],
-    "sql" => "varchar(20) NOT NULL default ''",
+    "sql" => ['type' => 'string', 'length' => 20, 'default' => ''],
 ];
 
 $GLOBALS["TL_DCA"]["tl_module"]["fields"]["whatsappMessage"] = [
