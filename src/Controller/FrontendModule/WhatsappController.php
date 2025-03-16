@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Contao\StringUtil;
 
-#[AsFrontendModule(category: "miscellaneous", type: "whatsapp", template: "mod_whatsapp")]
+#[AsFrontendModule(category: "miscellaneous")]
 class WhatsappController extends AbstractFrontendModuleController
 {
     protected function getResponse(FragmentTemplate $template, ModuleModel $model, Request $request): Response
