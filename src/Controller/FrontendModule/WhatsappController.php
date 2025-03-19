@@ -11,7 +11,6 @@ use Contao\ModuleModel;
 use Contao\PageModel;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Contao\StringUtil;
 
 #[AsFrontendModule(category: "miscellaneous")]
 class WhatsappController extends AbstractFrontendModuleController
@@ -36,7 +35,6 @@ class WhatsappController extends AbstractFrontendModuleController
         $template->set('whatsappTitle', $page->whatsappTitle ?: $rootPage->whatsappTitle ?: $model->whatsappTitle);
         $template->set('whatsappNumber', $page->whatsappNumber ?: $rootPage->whatsappNumber ?: $model->whatsappNumber);
         $template->set('whatsappMessage', $page->whatsappMessage ?: $rootPage->whatsappMessage ?: $model->whatsappMessage);
-        $template->set('cssClass', StringUtil::deserialize($model->cssID)[1] ?? '');
         $template->set('searchable', False);
 
         // Add JavaScript file to the page
