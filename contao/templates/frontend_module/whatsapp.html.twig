@@ -1,11 +1,11 @@
-
-
-{% if searchable is defined and not searchable %}
-    <!-- indexer::stop -->
-{%- endif %}
-
+<!-- indexer::stop -->
 {% block whatsapp %}
-    <div class="module-whatsapp {{ cssClass }}">
+    {% set attributes = attrs()
+      .setIfExists('id', element_html_id)
+      .addClass([element_css_classes, "module-#{type|replace({'_': '-'})}"])
+      .mergeWith(attributes|default)
+    %}
+    <div {% block attributes %}{{ attributes }}{% endblock %}>
         <a id="whatsapp-link" 
         href="#" 
         data-phone="{{ whatsappNumber }}"
@@ -17,8 +17,4 @@
         </a>
     </div>
 {% endblock %}
-
-{% if searchable is defined and not searchable -%}
-    <!-- indexer::continue -->
-{% endif %}
-
+<!-- indexer::continue -->
