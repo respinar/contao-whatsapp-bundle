@@ -1,20 +1,12 @@
-<!-- indexer::stop -->
-{% block whatsapp %}
-    {% set attributes = attrs()
-      .setIfExists('id', element_html_id)
-      .addClass([element_css_classes, "module-#{type|replace({'_': '-'})}"])
-      .mergeWith(attributes|default)
-    %}
-    <div {% block attributes %}{{ attributes }}{% endblock %}>
-        <a id="whatsapp-link" 
-        href="#" 
-        data-phone="{{ whatsappNumber }}"
-        data-message="{{ whatsappMessage }}" 
-        title="WhatsApp" 
-        rel="nofollow" 
-        target="_blank">
-            <span>{{ whatsappTitle }}</span>
-        </a>
-    </div>
+{% extends "@Contao/frontend_module/_base.html.twig" %}
+{% block inner %}
+    <a id="whatsapp-link" 
+    href="#" 
+    data-phone="{{ whatsappNumber }}"
+    data-message="{{ whatsappMessage }}" 
+    title="WhatsApp" 
+    rel="nofollow" 
+    target="_blank">
+        <span>{{ whatsappTitle }}</span>
+    </a>
 {% endblock %}
-<!-- indexer::continue -->
