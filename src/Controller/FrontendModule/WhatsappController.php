@@ -42,4 +42,20 @@ class WhatsappController extends AbstractFrontendModuleController
 
         return $template->getResponse();
     }
+
+    private function isWhatsappVisible(PageModel $page, ModuleModel $model): bool
+    {
+
+        while ($page !== null) {
+            $visibility = $page->whatsappVisibility;
+
+            if ($visibility !== 'default') {                
+                return $visibility === 'show';
+            }
+
+            $page = PageModel::findById($page->pid);
+        }
+
+        return $model->whatsappIsVisible; // default fallback = enabled
+    }
 }
