@@ -60,9 +60,9 @@ class WhatsappController extends AbstractFrontendModuleController
         }     
 
         // Assign data to the template
-        $template->set('whatsappTitle', $page->whatsappTitle ?: $rootPage->whatsappTitle ?: $model->whatsappTitle);
-        $template->set('whatsappNumber', $page->whatsappNumber ?: $rootPage->whatsappNumber ?: $model->whatsappNumber);
-        $template->set('whatsappMessage', $page->whatsappMessage ?: $rootPage->whatsappMessage ?: $model->whatsappMessage);
+        $template->set('whatsappTitle', $whatsappData['title'] ?? $model->whatsappTitle);
+        $template->set('whatsappNumber', $whatsappData['number'] ?? $model->whatsappNumber);
+        $template->set('whatsappMessage', $whatsappData['message'] ?? $model->whatsappMessage);
         $template->set('searchable', False);
 
         // Add JavaScript file to the page
