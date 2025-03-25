@@ -4,17 +4,19 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 
 PaletteManipulator::create()
     ->addLegend("whatsapp_legend", "protected_legend", PaletteManipulator::POSITION_BEFORE)
-    ->addField(["whatsappTitle", "whatsappDisabled", "whatsappNumber", "whatsappMessage"], "whatsapp_legend", PaletteManipulator::POSITION_APPEND)
+    ->addField(["whatsappTitle", "whatsappVisibility", "whatsappNumber", "whatsappMessage"], "whatsapp_legend", PaletteManipulator::POSITION_APPEND)
     ->applyToPalette("regular", "tl_page")
     ->applyToPalette('root', 'tl_page')
     ->applyToPalette('rootfallback', 'tl_page');
 
 // Define fields
-$GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappDisabled"] = [
+$GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappVisibility"] = [
     "exclude" => true,
-    "inputType" => "checkbox",
-    "eval" => ["tl_class" => "w50 m12"],
-    "sql" => ['type' => 'boolean', 'default' => false],
+    "inputType" => "select",
+    'options'   => ['default', 'show', 'hide'],
+    'reference'=> &$GLOBALS['TL_LANG']['whatsappVisibilityOptions'],
+    "eval" => ["tl_class" => "w50"],
+    "sql" => ['type' => 'string', 'length' => 20, 'default' => 'default'],
 ];
 
 $GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappTitle"] = [
