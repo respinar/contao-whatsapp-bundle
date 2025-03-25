@@ -23,10 +23,41 @@ class WhatsappController extends AbstractFrontendModuleController
         if (!$this->isWhatsappVisible($page, $model)) {
             return new Response();
         }
-       
-         if ($page->whatsappDisabled ?? $rootPage->whatsappDisabled ?? false) {
-            return new Response();
-        }       
+
+        $whatsappData = [       
+            'title' => null,
+            'number' => null,
+            'message' => null,
+        ];
+
+        while ($page !== null) {
+    
+            // Set only if not already set and the page value is non-empty
+            if (empty($whatsappData['title']) && !empty(trim((string)$page->whatsappTitle))) {
+                $whatsappData['title'] = $page->whatsappTitle;
+            }
+
+            if (empty($whatsappData['number']) && !empty(trim((string)$page->whatsappNumber))) {
+                $whatsappData['number'] = $page->whatsappNumber;
+            }
+
+            if (empty($whatsappData['message']) && !empty(trim((string)$page->whatsappMessage))) {
+                $whatsappData['message'] = $page->whatsappMessage;
+            }
+
+            // If all are filled, break
+            if (!empty($whatsappData['title']) && !empty($whatsappData['number']) && !empty($whatsappData['message'])) {
+                break;
+            }
+    
+            // If all values are found, break
+            if ($whatsappData['title'] && $whatsappData['number'] && $whatsappData['message']) {
+                break;
+            }
+
+            // Move to parent
+            $page = PageModel::findById($page->pid);
+        }     
 
         // Assign data to the template
         $template->set('whatsappTitle', $page->whatsappTitle ?: $rootPage->whatsappTitle ?: $model->whatsappTitle);
