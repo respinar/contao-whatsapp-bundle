@@ -17,14 +17,21 @@
                 <source>Enter the title for the WhatsApp module.</source>
                 <target>Geben Sie den Titel für das WhatsApp-Modul ein.</target>
             </trans-unit>
-
+            <trans-unit id="tl_module.whatsappIsVisible.0">
+                <source>Display WhatsApp Button</source>
+                <target>WhatsApp-Schaltfläche anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tl_module.whatsappIsVisible.1">
+                <source>Show the WhatsApp contact button on the page if enabled.</source>
+                <target>Zeigt die WhatsApp-Kontaktschaltfläche auf der Seite an, wenn sie aktiviert ist.</target>
+            </trans-unit>
             <trans-unit id="tl_module.whatsappNumber.0">
                 <source>WhatsApp Number</source>
                 <target>WhatsApp-Nummer</target>
             </trans-unit>
             <trans-unit id="tl_module.whatsappNumber.1">
-                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
-                <target>Geben Sie die Telefonnummer für WhatsApp ein (z. B. +1234567890).</target>
+                <source>Enter the phone number for WhatsApp (e.g., 1234567890).</source>
+                <target>Geben Sie die Telefonnummer für WhatsApp ein (z. B. 1234567890).</target>
             </trans-unit>
 
             <trans-unit id="tl_module.whatsappMessage.0">
