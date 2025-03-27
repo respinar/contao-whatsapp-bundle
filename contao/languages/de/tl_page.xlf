@@ -9,13 +9,13 @@
             </trans-unit>
 
             <!-- Fields -->
-            <trans-unit id="tl_page.whatsappDisabled.0">
-                <source>Disable WhatsApp</source>
-                <target>WhatsApp deaktivieren</target>
+            <trans-unit id="tl_page.whatsappVisibility.0">
+                <source>WhatsApp Button Visibility</source>
+                <target>Sichtbarkeit der WhatsApp-Schaltfläche</target>
             </trans-unit>
-            <trans-unit id="tl_page.whatsappDisabled.1">
-                <source>Check this box to disable the WhatsApp feature on this page.</source>
-                <target>Aktivieren Sie dieses Kontrollkästchen, um die WhatsApp-Funktion auf dieser Seite zu deaktivieren.</target>
+            <trans-unit id="tl_page.whatsappVisibility.1">
+                <source>Define whether the WhatsApp button should be shown or hidden on this page. Use "Inherit" to inherit the setting from the parent page or module settings.</source>
+                <target>Geben Sie an, ob die WhatsApp-Schaltfläche auf dieser Seite angezeigt oder ausgeblendet werden soll. Verwenden Sie "Vererben", um die Einstellung von der übergeordneten Seite oder dem Modul zu übernehmen.</target>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappTitle.0">
@@ -32,8 +32,8 @@
                 <target>WhatsApp-Nummer</target>
             </trans-unit>
             <trans-unit id="tl_page.whatsappNumber.1">
-                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
-                <target>Geben Sie die Telefonnummer für WhatsApp ein (z. B. +1234567890).</target>
+                <source>Enter the phone number for WhatsApp (e.g., 1234567890).</source>
+                <target>Geben Sie die Telefonnummer für WhatsApp ein (z. B. 1234567890).</target>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappMessage.0">
