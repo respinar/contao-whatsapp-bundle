@@ -17,14 +17,21 @@
                 <source>Enter the title for the WhatsApp module.</source>
                 <target>عنوان ماژول واتساپ را وارد کنید.</target>
             </trans-unit>
-
+            <trans-unit id="tl_module.whatsappIsVisible.0">
+                <source>Display WhatsApp Button</source>
+                <target>نمایش دکمه واتساپ</target>
+            </trans-unit>
+            <trans-unit id="tl_module.whatsappIsVisible.1">
+                <source>Show the WhatsApp contact button on the page if enabled.</source>
+                <target>در صورت فعال بودن، دکمه تماس واتساپ را در صفحه نمایش دهد.</target>
+            </trans-unit>
             <trans-unit id="tl_module.whatsappNumber.0">
                 <source>WhatsApp Number</source>
                 <target>شماره واتساپ</target>
             </trans-unit>
             <trans-unit id="tl_module.whatsappNumber.1">
-                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
-                <target>شماره تلفن واتساپ را وارد کنید (مثلاً +1234567890).</target>
+                <source>Enter the phone number for WhatsApp (e.g., 1234567890).</source>
+                <target>شماره تلفن واتساپ را وارد کنید (مثلاً 1234567890).</target>
             </trans-unit>
 
             <trans-unit id="tl_module.whatsappMessage.0">
