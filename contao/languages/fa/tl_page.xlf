@@ -9,13 +9,13 @@
             </trans-unit>
 
             <!-- Fields -->
-            <trans-unit id="tl_page.whatsappDisabled.0">
-                <source>Disable WhatsApp</source>
-                <target>غیرفعال کردن واتساپ</target>
+            <trans-unit id="tl_page.whatsappVisibility.0">
+                <source>WhatsApp Button Visibility</source>
+                <target>قابلیت نمایش دکمه واتساپ</target>
             </trans-unit>
-            <trans-unit id="tl_page.whatsappDisabled.1">
-                <source>Check this box to disable the WhatsApp feature on this page.</source>
-                <target>این کادر را علامت بزنید تا قابلیت واتساپ در این صفحه غیرفعال شود.</target>
+            <trans-unit id="tl_page.whatsappVisibility.1">
+                <source>Define whether the WhatsApp button should be shown or hidden on this page. Use "Inherit" to inherit the setting from the parent page or module settings.</source>
+                <target>تعیین کنید که آیا دکمه واتساپ باید در این صفحه نمایش داده شود یا پنهان باشد. از گزینه "ارث‌بری" برای استفاده از تنظیمات صفحه والد یا ماژول استفاده کنید.</target>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappTitle.0">
@@ -32,8 +32,8 @@
                 <target>شماره واتساپ</target>
             </trans-unit>
             <trans-unit id="tl_page.whatsappNumber.1">
-                <source>Enter the phone number for WhatsApp (e.g., +1234567890).</source>
-                <target>شماره تلفن واتساپ را وارد کنید (مثلاً +1234567890).</target>
+                <source>Enter the phone number for WhatsApp (e.g., 1234567890).</source>
+                <target>شماره تلفن واتساپ را وارد کنید (مثلاً 1234567890).</target>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappMessage.0">
