@@ -14,8 +14,8 @@
                 <target>قابلیت نمایش دکمه واتساپ</target>
             </trans-unit>
             <trans-unit id="tl_page.whatsappVisibility.1">
-                <source>Define whether the WhatsApp button should be shown or hidden on this page. Use "Inherit" to inherit the setting from the parent page or module settings.</source>
-                <target>تعیین کنید که آیا دکمه واتساپ باید در این صفحه نمایش داده شود یا پنهان باشد. از گزینه "ارث‌بری" برای استفاده از تنظیمات صفحه والد یا ماژول استفاده کنید.</target>
+                <source>Define whether the WhatsApp button should be shown or hidden on this page. Leave it blank to inherit the setting from the parent page or module settings.</source>
+                <target>تعیین کنید که آیا دکمه واتساپ باید در این صفحه نمایش داده شود یا خیر. برای ارث‌بری از تنظیمات صفحه والد یا ماژول، این فیلد را خالی بگذارید.</target>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappTitle.0">
