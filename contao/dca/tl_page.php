@@ -15,8 +15,8 @@ $GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappVisibility"] = [
     "inputType" => "select",
     'options'   => [ 'show', 'hide'],
     'reference'=> &$GLOBALS['TL_LANG']['whatsappVisibilityOptions'],
-    "eval" => ["tl_class" => "w50"],
-    "sql" => ['type' => 'string', 'length' => 20, 'default' => 'default'],
+    "eval" => ['includeBlankOption' => true, "tl_class" => "w50"],
+    "sql" => ['type' => 'string', 'length' => 20, 'default' => ''],
 ];
 
 $GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappTitle"] = [
