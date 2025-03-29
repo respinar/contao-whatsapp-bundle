@@ -77,7 +77,7 @@ class WhatsappController extends AbstractFrontendModuleController
         while ($page !== null) {
             $visibility = $page->whatsappVisibility;
 
-            if ($visibility !== 'default') {                
+            if ($visibility) {
                 return $visibility === 'show';
             }
 
