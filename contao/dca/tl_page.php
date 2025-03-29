@@ -13,7 +13,7 @@ PaletteManipulator::create()
 $GLOBALS["TL_DCA"]["tl_page"]["fields"]["whatsappVisibility"] = [
     "exclude" => true,
     "inputType" => "select",
-    'options'   => ['default', 'show', 'hide'],
+    'options'   => [ 'show', 'hide'],
     'reference'=> &$GLOBALS['TL_LANG']['whatsappVisibilityOptions'],
     "eval" => ["tl_class" => "w50"],
     "sql" => ['type' => 'string', 'length' => 20, 'default' => 'default'],
