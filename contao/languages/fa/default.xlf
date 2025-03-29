@@ -10,10 +10,6 @@
         <source>Whatsapp Button</source>
         <target>دکمه واتساپ</target>
       </trans-unit>
-      <trans-unit id="whatsappVisibilityOptions.default">
-        <source>Inherit</source>
-        <target>ارث‌بری</target>
-      </trans-unit>
       <trans-unit id="whatsappVisibilityOptions.show">
         <source>Show</source>
         <target>نمایش</target>
