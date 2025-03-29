@@ -12,7 +12,7 @@
                 <source>WhatsApp Button Visibility</source>
             </trans-unit>
             <trans-unit id="tl_page.whatsappVisibility.1">
-                <source>Define whether the WhatsApp button should be shown or hidden on this page. Use "Inherit" to inherit the setting from the parent page or module settings.</source>
+                <source>Define whether the WhatsApp button should be shown or hidden on this page. Leave it blank to inherit the setting from the parent page or module settings.</source>
             </trans-unit>
 
             <trans-unit id="tl_page.whatsappTitle.0">
