@@ -84,6 +84,6 @@ class WhatsappController extends AbstractFrontendModuleController
             $page = PageModel::findById($page->pid);
         }
 
-        return $model->whatsappIsVisible; // default fallback = enabled
+        return $model->whatsappIsVisible;
     }
 }
