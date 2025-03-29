@@ -8,9 +8,6 @@
       <trans-unit id="FMD.whatsapp.1">
         <source>Whatsapp Button</source>
       </trans-unit>
-      <trans-unit id="whatsappVisibilityOptions.default">
-        <source>Inherit</source>
-      </trans-unit>
       <trans-unit id="whatsappVisibilityOptions.show">
         <source>Show</source>
       </trans-unit>
